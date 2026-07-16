@@ -42,6 +42,8 @@ Information entered into Notary Jotter is used only to provide app features, inc
 
 Notary Jotter stores journal data in encrypted form on your device. The app uses standard encryption provided through Apple platform technologies.
 
+Notary Jotter is designed to support tamper-evident record keeping by logging changes to journal entries. This means edits cannot be made secretly without a change record.
+
 If you choose to create a backup, the backup is encrypted with the password you provide. You are responsible for remembering that password. We cannot recover lost backup passwords.
 
 ## iCloud and File Backups
