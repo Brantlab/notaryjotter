@@ -18,6 +18,3 @@ hugo --gc --minify
 
 The generated site is written to `public/`.
 
-## Before launch
-
-Replace the placeholder App Store links (`href="#"`) in `layouts/index.html` with the live NotaryJotter App Store URL.
