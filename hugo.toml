@@ -1,0 +1,12 @@
+baseURL = "https://notaryjotter.com/"
+languageCode = "en-us"
+title = "NotaryJotter"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "A private, professional digital journal for modern notaries."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

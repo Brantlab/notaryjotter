@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Params.description }}">
+  <meta name="theme-color" content="#092933">
+  <meta property="og:title" content="NotaryJotter — Your notary work, beautifully organized">
+  <meta property="og:description" content="A private, professional digital journal for modern notaries.">
+  <meta property="og:type" content="website">
+  <title>NotaryJotter — Digital Notary Journal for iPhone</title>
+  <link rel="icon" href="/images/app-logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="NotaryJotter home">
+      <img src="/images/app-logo.svg" alt="" width="42" height="42">
+      <span>NotaryJotter</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download" class="nav-cta">Get the app</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> Built for independent notaries</div>
+        <h1>Your notary work.<br><em>Beautifully organized.</em></h1>
+        <p class="hero-lead">The secure digital journal that keeps every signing, document, fee, and detail exactly where you need it.</p>
+        <div class="hero-actions">
+          <a href="#download" class="button button-primary">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.54c-.02-2.23 1.82-3.31 1.9-3.36a4.06 4.06 0 0 0-3.2-1.73c-1.35-.14-2.66.81-3.35.81-.7 0-1.76-.8-2.9-.77a4.22 4.22 0 0 0-3.55 2.17c-1.53 2.65-.39 6.55 1.08 8.69.74 1.05 1.6 2.22 2.74 2.18 1.12-.05 1.54-.7 2.89-.7 1.34 0 1.74.7 2.9.67 1.2-.02 1.96-1.05 2.67-2.11a8.66 8.66 0 0 0 1.22-2.49 3.86 3.86 0 0 1-2.4-3.36ZM14.87 6.02a3.88 3.88 0 0 0 .89-2.8 3.95 3.95 0 0 0-2.57 1.33 3.7 3.7 0 0 0-.92 2.7 3.28 3.28 0 0 0 2.6-1.23Z"/></svg>
+            <span><small>Download on the</small>App Store</span>
+          </a>
+          <a href="#features" class="text-link">Explore features <span>↘</span></a>
+        </div>
+        <div class="trust-row"><span>Face ID protected</span><span>Encrypted backups</span><span>Made for iPhone</span></div>
+      </div>
+
+      <div class="hero-visual reveal delay">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="statusbar"><b>9:41</b><span>● ◒ ▰</span></div>
+            <div class="app-heading"><div><small>GOOD MORNING</small><strong>My Journal</strong></div><button>＋</button></div>
+            <div class="summary-card">
+              <small>THIS MONTH</small><strong>$1,284.00</strong>
+              <div class="summary-meta"><span>32 signings</span><span>↑ 18%</span></div>
+              <div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="section-label"><b>Recent entries</b><span>View all</span></div>
+            <div class="entry"><span class="entry-icon">✓</span><div><b>Journal #0032</b><small>Acknowledgment · Today</small></div><strong>$45</strong></div>
+            <div class="entry"><span class="entry-icon gold">✦</span><div><b>Journal #0031</b><small>Jurat · Yesterday</small></div><strong>$65</strong></div>
+            <div class="entry"><span class="entry-icon">✓</span><div><b>Journal #0030</b><small>Oath · Jun 22</small></div><strong>$35</strong></div>
+            <div class="tabbar"><span class="active">▤<small>Journal</small></span><span>▥<small>Analytics</small></span><span>✓<small>Checklist</small></span></div>
+          </div>
+        </div>
+        <div class="float-card float-lock"><span>⌁</span><div><b>Face ID</b><small>Journal secured</small></div><i>✓</i></div>
+        <div class="float-card float-cloud"><span>☁</span><div><b>Backup complete</b><small>Encrypted in iCloud</small></div></div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Core benefits">
+      <div><strong>Every entry</strong><span>kept in one place</span></div><i></i>
+      <div><strong>Your data</strong><span>private by design</span></div><i></i>
+      <div><strong>Your workflow</strong><span>faster and clearer</span></div>
+    </section>
+
+    <section class="intro section" id="features">
+      <div class="section-kicker">Everything you need</div>
+      <h2>Less paperwork.<br><em>More peace of mind.</em></h2>
+      <p>From the first signature to your end-of-month totals, NotaryJotter gives your business a calmer, more capable home.</p>
+    </section>
+
+    <section class="feature-grid section">
+      <article class="feature-card feature-wide dark reveal">
+        <div class="feature-copy"><span class="number">01</span><h3>A journal that works<br>the way you do.</h3><p>Record client details, document types, fees, locations, notes, and more. Find any signing quickly with search and filters.</p><div class="tags"><span>Smart filters</span><span>GPS location</span><span>Custom lists</span></div></div>
+        <div class="mini-journal"><div class="mj-head"><b>Journal entries</b><span>⌕</span></div><div class="mj-filter">All entries <span>32 records</span></div><div class="mj-row"><i>AC</i><div><b>Acknowledgment</b><small>Journal #0032 · Today</small></div><strong>$45.00</strong></div><div class="mj-row"><i>JR</i><div><b>Jurat</b><small>Journal #0031 · Yesterday</small></div><strong>$65.00</strong></div><div class="mj-row"><i>OA</i><div><b>Oath or Affirmation</b><small>Journal #0030 · Jun 22</small></div><strong>$35.00</strong></div></div>
+      </article>
+      <article class="feature-card reveal"><span class="number">02</span><div class="feature-icon">⌁</div><h3>Capture every detail</h3><p>Scan documents, add photos, collect signatures, and log precise GPS—all without leaving the entry.</p></article>
+      <article class="feature-card gold-card reveal delay"><span class="number">03</span><div class="feature-icon">↗</div><h3>Professional PDF exports</h3><p>Create polished journal PDFs and include supporting scans when it’s time to share or archive.</p></article>
+      <article class="feature-card analytics-card reveal">
+        <span class="number">04</span><h3>Know your business</h3><p>See fee totals, signing volume, trip fees, and trends by document type.</p>
+        <div class="bars"><div><span>APR</span><i style="height:35%"></i></div><div><span>MAY</span><i style="height:58%"></i></div><div><span>JUN</span><i style="height:82%"></i></div><div><span>JUL</span><i style="height:100%"></i></div></div>
+      </article>
+      <article class="feature-card reveal delay"><span class="number">05</span><div class="feature-icon">✓</div><h3>Always prepared</h3><p>Track commission renewals, insurance, training, and the supplies you need before each appointment.</p></article>
+    </section>
+
+    <section class="privacy section" id="privacy">
+      <div class="privacy-art reveal"><div class="shield"><img src="/images/app-logo.svg" alt="NotaryJotter app icon"></div><div class="privacy-ring r1"></div><div class="privacy-ring r2"></div></div>
+      <div class="privacy-copy reveal delay"><div class="section-kicker light">Private by design</div><h2>Your journal is<br><em>your business.</em></h2><p>NotaryJotter is built to keep sensitive journal information protected on your device and in your backups.</p><ul><li><span>✓</span><div><b>Face ID protection</b><small>Only you can unlock your journal.</small></div></li><li><span>✓</span><div><b>Encrypted local storage</b><small>Attachments and entries stay protected.</small></div></li><li><span>✓</span><div><b>Password-encrypted backups</b><small>Back up to iCloud or export a secure file.</small></div></li></ul></div>
+    </section>
+
+    <section class="testimonial section reveal">
+      <div class="quote-mark">“</div>
+      <blockquote>Built for the details that matter—from the signer in front of you to the records you may need years from now.</blockquote>
+      <p>One thoughtful tool for the full notary workflow.</p>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div><div class="section-kicker">Good to know</div><h2>Questions,<br><em>answered.</em></h2></div>
+      <div class="accordion">
+        <details open><summary>Is my journal data secure?<span>＋</span></summary><p>Yes. Your journal is protected with device authentication, encrypted local storage, and password-encrypted backup options.</p></details>
+        <details><summary>Can I export my records?<span>＋</span></summary><p>Yes. You can create professional PDF journal records and optionally append supporting image and scanned-document attachments.</p></details>
+        <details><summary>Does it support iCloud backup?<span>＋</span></summary><p>Yes. Automatic backups can run after journal changes and when the app enters the background. Backups are encrypted using your password.</p></details>
+        <details><summary>Can I customize it for my work?<span>＋</span></summary><p>Yes. Add your own document types, identification methods, checklist items, and professional profile details.</p></details>
+      </div>
+    </section>
+
+    <section class="download section" id="download">
+      <div class="download-inner reveal"><img src="/images/app-logo.svg" alt="NotaryJotter icon"><div><div class="eyebrow"><span></span> Available for iPhone</div><h2>A better journal<br>starts here.</h2><p>Bring confidence and clarity to every signing.</p><a class="button button-light" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.54c-.02-2.23 1.82-3.31 1.9-3.36a4.06 4.06 0 0 0-3.2-1.73c-1.35-.14-2.66.81-3.35.81-.7 0-1.76-.8-2.9-.77a4.22 4.22 0 0 0-3.55 2.17c-1.53 2.65-.39 6.55 1.08 8.69.74 1.05 1.6 2.22 2.74 2.18 1.12-.05 1.54-.7 2.89-.7 1.34 0 1.74.7 2.9.67 1.2-.02 1.96-1.05 2.67-2.11a8.66 8.66 0 0 0 1.22-2.49 3.86 3.86 0 0 1-2.4-3.36ZM14.87 6.02a3.88 3.88 0 0 0 .89-2.8 3.95 3.95 0 0 0-2.57 1.33 3.7 3.7 0 0 0-.92 2.7 3.28 3.28 0 0 0 2.6-1.23Z"/></svg><span><small>Download on the</small>App Store</span></a></div></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><img src="/images/app-logo.svg" alt="" width="38"><span>NotaryJotter</span></a><p>Professional tools for modern notaries.</p><nav><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a><a href="mailto:support@notaryjotter.com">Support</a></nav><small>© {{ now.Year }} NotaryJotter. All rights reserved.</small></footer>
+</body>
+</html>
